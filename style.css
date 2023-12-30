@@ -125,8 +125,10 @@
     margin: 1.2em 0.4em;
     display:inline;
     border-radius: 10px;
-    backdrop-filter: blur(4px);
-    background: rgba(255, 255, 255, 0.388);
+    border:1px solid rgba(255, 255, 255, 0.27);
+    backdrop-filter: blur(4.5px);
+    background: rgba(255, 255, 255, 0.17);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   }
   .card svg{
     width: 150px;
