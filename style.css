@@ -7,11 +7,12 @@
   }
 
   body {
+    min-width: 360px;
+    min-height: 760px;
     width: 100vw;
     height: 100vh;
-    background-image:linear-gradient(to top left,black,rgb(13, 105, 218),black);
-    background-repeat: no-repeat;
-    background-size:cover;
+    background:linear-gradient(45deg,black,rgb(10, 116, 209),black);
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,17 +82,19 @@
     width: 100%;
   }
 
-  /* From here on the styling cards is Done I may change the naming of classes
-  and id or tags in the future */
+  /* from here onwards the styling of cards starts */
 
   main {
     width: 100%;
     height: 100%;
-    overflow-y: scroll;
+    max-width: 100%;
+    max-height: 100%;
     position: relative;
-
+    background-color: transparent;
     transition: all 1s;
+    overflow-y: scroll;
   }
+  
   .wrapper{
     width: 100%;
     max-height: 70%;
@@ -103,7 +106,7 @@
     padding:10px 0 0 0;    
   }
 
-  #g-head,#s-head{
+  .heading{
     width: 100%;
     height: 30px;
     font-size: 2em;
@@ -112,7 +115,7 @@
     text-shadow: 0 0 10px black, 0 0 10px black;      
   }
 
-  .cards {
+  .cards{
     width: 100%;
     position: relative;
     display: flex;
@@ -129,6 +132,7 @@
     backdrop-filter: blur(4px);
     background: rgba(255, 255, 255, 0.388);
   }
+  
   .card svg{
     width: 150px;
     height: 150px;
@@ -176,7 +180,6 @@
     text-overflow: ellipsis;
     white-space: nowrap;
   }
-  
 
   @media (max-width: 600px) {    
    #menu a span:nth-of-type(1){
@@ -190,7 +193,6 @@
       height: 220px;
       margin: 1.2em 0.2em;
     }
-
     
     .card svg{
       width: 70%;
@@ -209,19 +211,20 @@
       transform: translate(-50%, 20%);
     }
     
-    .card-info{
-      border: 2px solid black;
-      font-size:.8em;
-      width:100%;
-      height:50%;
-      position:absolute;
-      bottom: 0;
-      left:50%;
-      transform: translate(-50%,0);
-    }
+        .card-info{
+          border: 2px solid black;
+          font-size:.8em;
+          width:100%;
+          height:50%;
+          position:absolute;
+          bottom: 0;
+          left:50%;
+          transform: translate(-50%,0);
+        }
+        
+        .card-info h3{
+          padding: 0%;
+          text-align:center;
+         }
     
-    .card-info h3{
-      padding: 0%;
-      text-align:center;
-     }
   }
