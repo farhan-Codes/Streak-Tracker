@@ -136,13 +136,14 @@
     position: absolute;
     top: 10%;
     left: 50%;
-    transform: translate(-50%, -10%);
+    transform: translate(-50%, -10%) rotate(-90deg);
   }
   
   .card svg circle{
     fill: none;
     stroke-width: 4px;
-    stroke-dasharray: 300px;
+    stroke-dasharray: 284px;
+    stroke-dashoffset:142px;
   }
   
   .per{
@@ -215,7 +216,7 @@
       position: relative;
       top: 10%;
       left: 50%;
-      transform: translate(-50%, -10%);
+      transform: translate(-50%, -10%) rotate(-90deg);
     }
     
     .per{
