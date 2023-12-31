@@ -145,12 +145,11 @@ main {
 
 .card svg circle {
   fill: none;
-  stroke-width: 4px;
+  stroke-width: 3px;
   stroke-dasharray: 284px;
-  stroke-dashoffset: 142px;
 }
 
-.per {
+.per{
   position: absolute;
   font-size: 2em;
   top: 25%;
