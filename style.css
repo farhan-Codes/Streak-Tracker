@@ -198,6 +198,13 @@ main {
   outline: none;
   border: 1px solid white;
   border-radius: 0.3em;
+  transition: all 0.5s;
+}
+
+.card-info button:hover{
+  background-color:whitesmoke;
+  color:black;
+  border-color:black;
 }
 
 @media (max-width: 600px) {
