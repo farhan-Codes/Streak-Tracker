@@ -1,4 +1,4 @@
-function randomPerc(pg) {
+function cardHandler(pg) {
     let rval = Math.floor(Math.random()*284);
     let vperc = (rval/284)*100;
     let bval = Math.abs((vperc*284)/100-284);
@@ -13,9 +13,9 @@ let syp = document.querySelector('#ysc');
 let smp = document.querySelector('#msc');
 let stp = document.querySelector('#dsc');
 
-randomPerc(gyp)
-randomPerc(gmp)
-randomPerc(gtp)
-randomPerc(syp)
-randomPerc(smp)
-randomPerc(stp)
+cardHandler(gyp)
+cardHandler(gmp)
+cardHandler(gtp)
+cardHandler(syp)
+cardHandler(smp)
+cardHandler(stp)

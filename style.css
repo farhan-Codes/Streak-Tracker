@@ -207,6 +207,18 @@ main {
   border-color:black;
 }
 
+.More_info{
+  background-color:white;
+  position: absolute;
+  top:50%;left: 50%;
+  transform: translate(-50%,-50%);
+  width:500px;height: 500px;
+  border-radius:2%;
+  box-shadow: 0 0 10px black;
+  overflow: hidden;
+}
+
+
 @media (max-width: 600px) {
   #menu a span:nth-of-type(1) {
     display: none;
@@ -251,4 +263,12 @@ main {
     padding: 0;
     text-align: center;
   }
+
+  .More_info{
+    position: absolute;
+    top:30%;left: 50%;
+    transform: translate(-50%,-30%);
+    width:300px;height: 400px;
+  }
+  
 }
