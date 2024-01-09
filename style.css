@@ -223,10 +223,10 @@ main {
 }
 
 .test{
-  background-color: aqua;
-  border: 2px solid black;
+  background-color:rgb(179, 177, 177);
+  color: rgb(179, 177, 177);
   margin:5px;
-  border-radius:18px;
+  border-radius:10px;
 }
 
 #vmh{
